@@ -4,24 +4,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 
-class ConditionMenu : AppCompatActivity() {
+class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_condition_menu)
+        setContentView(R.layout.activity_menu)
 
-        val  btnRetLets = findViewById(R.id. btnRetLets) as ImageView
 
-        btnRetLets.setOnClickListener {
+        val btnLetsGym = findViewById(R.id.btnLetsGym) as Button
+
+        btnLetsGym.setOnClickListener {
             val intent = Intent(this, LetsGymMenu::class.java)
             // start your next activity
             startActivity(intent)
         }
-        val  btnYes = findViewById(R.id.btnYes) as Button
 
-        btnYes.setOnClickListener {
-            val intent = Intent(this, BasicInformation::class.java)
+        val btnRetMain = findViewById(R.id.btnRetMain) as ImageView
+        btnRetMain.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             // start your next activity
             startActivity(intent)
         }
