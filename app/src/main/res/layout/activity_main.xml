@@ -143,7 +143,7 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView2"
-                            app:layout_constraintVertical_bias="1.0">
+                            app:layout_constraintVertical_bias="0.0">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -153,13 +153,11 @@
                                     android:id="@+id/textView4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="17dp"
-                                    android:layout_marginStart="16dp"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="8dp"
                                     android:foregroundGravity="center"
                                     android:text="Vacation Mode"
                                     android:textSize="13sp"
-                                    app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
@@ -167,15 +165,14 @@
                                     android:id="@+id/textView6"
                                     android:layout_width="wrap_content"
                                     android:layout_height="17dp"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginStart="16dp"
                                     android:foregroundGravity="center"
                                     android:text="Workout Mode"
                                     android:textSize="13sp"
-                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
                                     app:layout_constraintStart_toEndOf="@+id/textView4"
-                                    app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+                                    app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+                                    app:layout_constraintVertical_bias="1.0" />
 
                                 <TextView
                                     android:id="@+id/textView7"
@@ -183,50 +180,56 @@
                                     android:layout_height="17dp"
                                     android:layout_marginStart="20dp"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="5dp"
                                     android:foregroundGravity="center"
                                     android:text="Home Mode"
                                     android:textSize="13sp"
-                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
                                     app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toEndOf="@+id/textView6"
-                                    app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+                                    app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+                                    app:layout_constraintVertical_bias="1.0" />
 
                                 <ImageButton
                                     android:id="@+id/imageButton2"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="16dp"
+                                    android:layout_marginTop="4dp"
                                     android:background="@drawable/roundcorner"
+                                    android:elevation="5dp"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:srcCompat="@drawable/framevalise"
                                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,DuplicateClickableBoundsCheck" />
 
                                 <ImageButton
-                                    android:id="@+id/imageButton3"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_marginStart="32dp"
-                                    android:background="@drawable/roundcorner"
-                                    app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/ic_round_fitness_center"
-                                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck"
-                                    tools:srcCompat="@drawable/ic_round_fitness_center" />
-
-                                <ImageButton
                                     android:id="@+id/imageButton4"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:layout_marginStart="28dp"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="4dp"
                                     android:background="@drawable/roundcorner"
+                                    android:elevation="5dp"
                                     app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toEndOf="@+id/imageButton3"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:srcCompat="@drawable/ic_majesticons_door_exit"
                                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck"
                                     tools:srcCompat="@drawable/ic_majesticons_door_exit" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton3"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/roundcorner"
+                                    android:elevation="5dp"
+                                    app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ic_round_fitness_center" />
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </HorizontalScrollView>
@@ -237,8 +240,9 @@
                         android:layout_width="290dp"
                         android:layout_height="110dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_marginBottom="5dp"
-                        android:background="@drawable/roundedrectangles">
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/roundedrectangles"
+                        android:elevation="5dp">
 
                         <ImageView
                             android:id="@+id/iv33"
@@ -257,12 +261,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:layout_centerInParent="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginStart="15dp"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginBottom="34dp"
                             android:text="Running : Let’s Gym"
                             android:textStyle="bold" />
 
@@ -302,18 +307,21 @@
                             android:layout_height="130dp"
                             android:layout_marginStart="4dp"
                             android:layout_marginEnd="5dp"
-                            android:background="@drawable/roundedrectangles">
+                            android:background="@drawable/roundedrectangles"
+                            android:elevation="5dp">
 
                             <ImageView
                                 android:id="@+id/iv33"
                                 android:layout_width="38dp"
                                 android:layout_height="34dp"
+                                android:layout_alignBottom="@+id/iV22"
                                 android:layout_alignParentTop="true"
                                 android:layout_alignParentRight="true"
-                                android:layout_marginStart="5dp"
+                                android:layout_marginStart="46dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginEnd="5dp"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginBottom="-7dp"
+                                android:layout_toEndOf="@+id/iV22"
                                 app:srcCompat="@drawable/ic_group_3" />
 
                             <TextView
@@ -349,9 +357,12 @@
                                 android:id="@+id/iV22"
                                 android:layout_width="28dp"
                                 android:layout_height="22dp"
+                                android:layout_alignParentStart="true"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginEnd="5dp"
                                 android:layout_marginBottom="10dp"
                                 app:srcCompat="@drawable/ic_monitor" />
@@ -361,19 +372,24 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:layout_marginStart="4dp"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/roundedrectangles">
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/roundedrectangles"
+                            android:elevation="5dp">
 
                             <ImageView
                                 android:id="@+id/iv33"
                                 android:layout_width="38dp"
                                 android:layout_height="34dp"
+                                android:layout_alignBottom="@+id/iV22"
                                 android:layout_alignParentTop="true"
                                 android:layout_alignParentRight="true"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="53dp"
+                                android:layout_marginTop="12dp"
                                 android:layout_marginEnd="15dp"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="21dp"
+                                android:layout_marginBottom="-9dp"
+                                android:layout_toEndOf="@+id/iV22"
                                 app:srcCompat="@drawable/ic_group_3" />
 
                             <TextView
@@ -397,7 +413,7 @@
                                 android:layout_height="22dp"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="25dp"
                                 android:layout_marginTop="15dp"
                                 android:layout_marginEnd="10dp"
                                 android:layout_marginBottom="10dp"
@@ -405,14 +421,14 @@
 
                             <TextView
                                 android:id="@+id/textView10"
-                                android:layout_width="wrap_content"
+                                android:layout_width="48dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentBottom="true"
-                                android:layout_marginStart="56dp"
-                                android:layout_marginEnd="70dp"
-                                android:layout_marginBottom="42dp"
+                                android:layout_marginStart="58dp"
+                                android:layout_marginEnd="44dp"
+                                android:layout_marginBottom="38dp"
                                 android:text="20 C°" />
 
                         </RelativeLayout>
@@ -424,6 +440,7 @@
                         android:layout_height="34dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:backgroundTint="#ffffff"
                         android:text="+ Add a device"
                         android:textColor="#6A6363"

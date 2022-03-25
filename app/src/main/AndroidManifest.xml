@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sport_Good">
         <activity
+            android:name=".ConditionMenu"
+            android:exported="false" />
+        <activity
+            android:name=".LetsGymMenu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
