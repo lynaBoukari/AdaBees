@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import time
-import hello as pm
+import PoseDetect as pm
 
 cap = cv2.VideoCapture(0)
 
