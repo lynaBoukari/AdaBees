@@ -1,10 +1,9 @@
-package com.example.sport_good
+package com.example.LetsGym
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.ImageView
 
 class MenuActivity : AppCompatActivity() {
@@ -16,7 +15,7 @@ class MenuActivity : AppCompatActivity() {
         val btnLetsGym = findViewById(R.id.btnLetsGym) as Button
 
         btnLetsGym.setOnClickListener {
-            val intent = Intent(this, LetsGymMenu::class.java)
+            val intent = Intent(this, BasicInformation::class.java)
             // start your next activity
             startActivity(intent)
         }

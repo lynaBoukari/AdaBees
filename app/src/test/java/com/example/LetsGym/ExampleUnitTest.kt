@@ -1,4 +1,4 @@
-package com.example.sport_good
+package com.example.LetsGym
 
 import org.junit.Test
 

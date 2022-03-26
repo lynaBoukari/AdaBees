@@ -1,9 +1,8 @@
-package com.example.sport_good
+package com.example.LetsGym
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {

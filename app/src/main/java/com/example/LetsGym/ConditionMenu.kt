@@ -1,4 +1,4 @@
-package com.example.sport_good
+package com.example.LetsGym
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,10 +20,6 @@ class ConditionMenu : AppCompatActivity() {
         }
         val  btnYes = findViewById(R.id.btnYes) as Button
 
-        btnYes.setOnClickListener {
-            val intent = Intent(this, BasicInformation::class.java)
-            // start your next activity
-            startActivity(intent)
-        }
+
     }
 }

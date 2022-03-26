@@ -1,4 +1,4 @@
-package com.example.sport_good
+package com.example.LetsGym
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +32,7 @@ class LetsGymMenu : AppCompatActivity() {
         }
 
         btnRetMenu.setOnClickListener {
-            val intent = Intent(this, MenuActivity::class.java)
+            val intent = Intent(this, BasicInformation::class.java)
             // start your next activity
             startActivity(intent)
         }
